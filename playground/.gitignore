@@ -1,0 +1,65 @@
+# os, lang
+## nodejs
+node_modules/
+.next/
+dist/
+
+## python
+.venv/
+__pycache__/
+
+## macos
+.DS_Store
+
+# env
+## claude
+.claude/
+.env
+!.env.sample
+
+## log
+logs/
+*.out
+*.log
+
+# private
+_drafts/
+_backups/
+database/
+uploads/
+responses/
+
+# resources (selective ignore)
+## Allow documentation and references (markdown files)
+!_docs/
+!_references/
+
+## Ignore large binary files in resources
+_resources/**/*.psd
+_resources/**/*.sketch
+_resources/**/*.ai
+_resources/**/*.fig
+_resources/**/mockups/*.png
+_resources/**/mockups/*.jpg
+_resources/**/mockups/*.pdf
+
+## Allow small assets (icons, optimized images)
+!_resources/design/assets/icons/*.svg
+!_resources/design/assets/images/*.webp
+!_resources/design/assets/fonts/*.woff2
+
+# images and videos
+*.mp4
+*.mov
+*.avi
+
+# Allow specific image formats in certain locations
+!_docs/**/*.png
+!_docs/**/*.jpg
+!_references/**/screenshots/*.png
+!_references/**/screenshots/*.jpg
+
+# zip, tar
+*.zip
+*.tar
+*.gz
